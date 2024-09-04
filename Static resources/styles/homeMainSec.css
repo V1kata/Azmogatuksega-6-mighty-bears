@@ -1,0 +1,27 @@
+.home-main-section {
+    height: 716px;
+}
+
+.home-main-section img {
+    width: 100%;
+    position: relative;
+}
+
+.home-main-section .main-sec-card {
+    position: absolute;
+    background: #FFF3E3;
+    width: 643px;
+    height: 443px;
+    top: 315px;
+    left: 778px;
+}
+
+.home-main-section .main-sec-card .inner-card {
+    display: flex;
+    flex-direction: column;
+    padding: 62px 43px 37px 39px;
+}
+
+.home-main-section .main-sec-card .inner-card h1 {
+
+}
