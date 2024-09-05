@@ -1,0 +1,29 @@
+.reusable-main-section {
+    position: relative;
+}
+
+.reusable-main-section img:nth-child(1) {
+    width: 100%;
+    height: 316px;
+    object-fit: cover;
+}
+
+.reusable-main-section .catalog-sec-text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.reusable-main-section .catalog-sec-text .mini-text {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+.reusable-main-section .catalog-sec-text h1 {
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 72px;
+    text-align: left;
+}
