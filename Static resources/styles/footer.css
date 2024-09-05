@@ -1,0 +1,104 @@
+footer {
+    border-top: 1px solid #9F9F9F;
+    padding: 20px;
+    height: 505px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start;
+    border-bottom: 1px solid #D9D9D9;
+    padding: 48px 0;
+}
+
+.footer-container div {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.branding h1 {
+    font-size: 24px;
+}
+
+.branding p {
+    font-size: 14px;
+    color: #555;
+}
+
+.branding div {
+    margin: 0;
+}
+
+.branding,
+.links,
+.help,
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.branding {
+    gap: 50px;
+}
+
+.links ul,
+.help ul {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+    list-style: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #777;
+}
+
+footer .grey {
+    color: #9F9F9F;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+footer .form {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+}
+
+footer input::placeholder {
+    color: #9F9F9F;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+footer input,
+footer button {
+    all: unset;
+    border-bottom: 1px solid black;
+}
+
+footer button {
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+footer .footer-end {
+    display: flex;
+    flex-direction: column;
+    margin: 35px 120.400px;
+}

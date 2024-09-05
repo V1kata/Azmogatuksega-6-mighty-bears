@@ -4,24 +4,54 @@
 
 .home-main-section img {
     width: 100%;
-    position: relative;
 }
 
 .home-main-section .main-sec-card {
     position: absolute;
+    top: 40%;
+    left: 51.5%;
+    width: 40%;
     background: #FFF3E3;
-    width: 643px;
-    height: 443px;
-    top: 315px;
-    left: 778px;
 }
 
 .home-main-section .main-sec-card .inner-card {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
     padding: 62px 43px 37px 39px;
 }
 
-.home-main-section .main-sec-card .inner-card h1 {
+.home-main-section .main-sec-card .inner-card p:nth-child(1) {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
 
+.home-main-section .main-sec-card .inner-card h1 {
+    color: #B88E2F;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 65px;
+    padding-right: 45px;
+}
+
+ .home-main-section .main-sec-card .inner-card p:nth-child(2) {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.home-main-section .main-sec-card .inner-card a {
+    display: block;
+    background: #B88E2F;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    width: 222px;
+    margin-top: 46px;
+    padding: 20px 0;
 }
