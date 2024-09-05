@@ -5,6 +5,7 @@
 @import url('./styles/homeProductSec.css');
 @import url('./styles/footer.css');
 @import url('./styles/mainCatalog.css');
+@import url('styles/SingleProductMain.css');
 
 * {
     margin: 0;
