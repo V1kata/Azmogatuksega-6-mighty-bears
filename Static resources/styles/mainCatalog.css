@@ -1,5 +1,8 @@
 .reusable-main-section {
     position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .reusable-main-section img:nth-child(1) {
@@ -12,18 +15,35 @@
     position: absolute;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.reusable-main-section .catalog-sec-text img:first-child {
+    width: 77px;
+    height: 77px;
 }
 
 .reusable-main-section .catalog-sec-text .mini-text {
     display: flex;
     flex-direction: row;
-    gap: 6px;
+    gap: 12px;
 }
 
 .reusable-main-section .catalog-sec-text h1 {
-    font-family: Poppins;
     font-size: 48px;
     font-weight: 500;
     line-height: 72px;
-    text-align: left;
+    margin-bottom: 3px;
+}
+
+.reusable-main-section .catalog-sec-text .mini-text p:first-child {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.reusable-main-section .catalog-sec-text .mini-text p:nth-child(2) {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
 }

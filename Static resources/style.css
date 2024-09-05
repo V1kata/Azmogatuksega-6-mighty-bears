@@ -5,6 +5,9 @@
 @import url('./styles/homeProductSec.css');
 @import url('./styles/footer.css');
 @import url('./styles/mainCatalog.css');
+@import url('./styles/filterSec.css');
+@import url('./styles/page-numbers.css');
+@import url('./styles/catalogGiven.css');
 @import url('styles/SingleProductMain.css');
 
 * {
@@ -14,13 +17,9 @@
 }
 
 section {
-    text-align: center;
     display: flex;
+    text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-section:not(:nth-child(1)) {
-    margin: 56px 0;
 }
