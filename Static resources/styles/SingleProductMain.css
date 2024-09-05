@@ -1,0 +1,6 @@
+.path{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  padding-left: 5%;
+}

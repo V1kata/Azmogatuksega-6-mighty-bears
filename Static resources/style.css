@@ -4,6 +4,7 @@
 @import url('./styles/browseRangeSec.css');
 @import url('./styles/homeProductSec.css');
 @import url('./styles/footer.css');
+@import url('styles/SingleProductMain.css');
 
 * {
     margin: 0;
