@@ -111,10 +111,7 @@ border: none;
 border-radius: 5px;
 background-color:#F9F1E7;
 cursor: pointer;
-;
 }
-
-
 
 .color-option {
   width: 30px;
@@ -126,7 +123,7 @@ cursor: pointer;
   border: 1px solid #ccc;
 }
 
-.purple {
+.color-select .purple {
   background-color: #816DFA;
 }
 
@@ -134,7 +131,7 @@ cursor: pointer;
   background-color: #000000
 }
 
-.brown {
+.color-select .brown {
   background-color: #B88E2F
 }
 
