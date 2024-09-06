@@ -45,24 +45,42 @@
 
         <section class="cart">
             <div class="cart-left">
-                <div class="cart-categories">
-                    <ul>
-                        <li>Product</li>
-                        <li>Price</li>
-                        <li>Quantity</li>
-                        <li>Subtotal</li>
-                    </ul>
-                </div>
-    
-                <div class="cart-item-card">
-                    <img src="assets/Asgaard sofa.svg" alt="">
-                    <p class="grey">Asgaard sofa</p>
-                    <p class="grey">Rs. 250,000.00</p>
-                    <input type="text" class="quantity" value="1" />
-                    <p>Rs. 250,000.00</p>
-                    <img src="assets/cofa.svg" alt="">
-                </div>
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Subtotal</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="assets/Asgaard sofa.svg" alt="Asgaard sofa" class="product-img">
+                            </td>
+                            <td>
+                                <p class="grey">Asgaard sofa</p>
+                            </td>
+                            <td>
+                                <p class="grey">Rs. 250,000.00</p>
+                            </td>
+                            <td>
+                                <input type="text" class="quantity" value="1" />
+                            </td>
+                            <td>
+                                <p>Rs. 250,000.00</p>
+                            </td>
+                            <td>
+                                <img src="assets/cofa.svg" alt="Remove item" class="trash-icon">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+
             <div class="cart-right">
                 <h3>Cart Totals</h3>
                 <div class="subtotal-right">
