@@ -49,17 +49,19 @@
                     <thead>
                         <tr>
                             <th></th>
-                            <th>Product</th>
-                            <th>Price</th>
-                            <th>Quantity</th>
-                            <th>Subtotal</th>
-                            <th></th>
+                            <td>Product</td>
+                            <td>Price</td>
+                            <td>Quantity</td>
+                            <td>Subtotal</td>
+                            <td></td>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>
-                                <img src="assets/Asgaard sofa.svg" alt="Asgaard sofa" class="product-img">
+                                <div class="imgBackground">
+                                    <img src="assets/Asgaard sofa.svg" alt="Asgaard sofa" class="product-img">
+                                </div>
                             </td>
                             <td>
                                 <p class="grey">Asgaard sofa</p>
@@ -67,7 +69,7 @@
                             <td>
                                 <p class="grey">Rs. 250,000.00</p>
                             </td>
-                            <td>
+                            <td class="quantity-td">
                                 <input type="text" class="quantity" value="1" />
                             </td>
                             <td>
@@ -94,7 +96,85 @@
                 <button>Check out</button>
             </div>
         </section>
+
+        <section class="catalog-given">
+        <div class="catalog-card">
+            <div class="left-image">
+                <img src="assets/trophy 1.svg" alt="">
+            </div>
+            <div class="right-details">
+                <p class="black">High Quality</p>
+                <p class="grey">crafted from top materials</p>
+            </div>
+        </div>
+        <div class="catalog-card">
+            <div class="left-image">
+                <img src="assets/guarantee.svg" alt="">
+            </div>
+            <div class="right-details">
+                <p class="black">Warranty Protection</p>
+                <p class="grey">Over 2 years</p>
+            </div>
+        </div>
+        <div class="catalog-card">
+            <div class="left-image">
+                <img src="assets/shipping.svg" alt="">
+            </div>
+            <div class="right-details">
+                <p class="black">Free Shipping</p>
+                <p class="grey">Order over 150 $</p>
+            </div>
+        </div>
+        <div class="catalog-card">
+            <div class="left-image">
+                <img src="assets/support.svg" alt="">
+            </div>
+            <div class="right-details">
+                <p class="black">24 / 7 Support</p>
+                <p class="grey">Dedicated support</p>
+            </div>
+        </div>
+        </section>
     </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="branding">
+                <h1>Furniro.</h1>
+                <div>
+                    <p class="grey">420 University Drive Suite 200 Coral Gables,</p>
+                    <p class="grey">FL 33134 USA</p>
+                </div>
+            </div>
+            <div class="links">
+                <h4 class="grey">Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="help">
+                <h4 class="grey">Help</h4>
+                <ul>
+                    <li><a href="#">Payment Options</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Privacy Policies</a></li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <h4 class="grey">Newsletter</h4>
+                <div class="form">
+                    <input type="email" placeholder="Enter Your Email Address">
+                    <button type="submit" class="underline">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-end">
+            <p>2023 furni. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 
 </html>

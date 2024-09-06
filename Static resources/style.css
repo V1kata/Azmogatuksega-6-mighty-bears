@@ -36,3 +36,7 @@ section {
     font-size: 14px;
     line-height: 21px;
 }
+
+*:focus {
+    outline: none;
+}
