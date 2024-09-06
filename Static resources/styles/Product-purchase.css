@@ -110,6 +110,7 @@ height: 30px;
 border: none;
 border-radius: 5px;
 background-color:#F9F1E7;
+cursor: pointer;
 ;
 }
 
@@ -177,65 +178,83 @@ background-color:#F9F1E7;
 }
 
 .sku-category {
-  font-size: 14px;
-  color: #666;
+font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+color: #9F9F9F;
+line-height: 45px;
+
 }
 
-.social-share a {
-  margin-right: 10px;
-  font-size: 20px;
-  text-decoration: none;
+.media-section{
+display: inline-flex;
+flex-direction: row;
+justify-content: center ;
+align-items: center ;
+gap: 20px ;
+padding: 0px;
+margin: 0px;
 }
 
-.product-details {
-  max-width: 1200px;
-  margin: 20px auto;
+
+
+.container {
+width: 100%;  
+margin: 40px auto;
+  background-color: #fff;
   padding: 20px;
-  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.additional-images {
-  display: flex;
-  margin-top: 20px;
-}
-
-.additional-images img {
-  width: 48%;
-  margin-right: 4%;
-}
-
-.related-products {
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: white;
-}
-
-.related-products h2 {
+header {
+  text-align: center;
   margin-bottom: 20px;
 }
 
-.product-grid {
+ul.tabs {
+  list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd;
 }
 
-.related-product {
+ul.tabs li {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: #888;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+ul.tabs li.active {
+  font-weight: bold;
+  color: #000;
+  border-bottom: 3px solid #000;
+}
+
+.content {
   text-align: center;
 }
 
-.related-product img {
-  width: 150px;
-  height: auto;
-  margin-bottom: 10px;
+.description p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 20px;
 }
 
-.show-more {
-  display: block;
-  margin: 20px auto;
-  padding: 10px 20px;
-  background-color: #333;
-  color: white;
-  border: none;
-  cursor: pointer;
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.images img {
+  width: 45%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
