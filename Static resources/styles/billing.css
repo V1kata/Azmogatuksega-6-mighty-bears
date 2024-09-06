@@ -1,7 +1,16 @@
+.billing {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 26px;
+    margin: 63px 100px;
+}
+
 .billing-left {
     display: flex;
     flex-direction: column;
     text-align: left;
+    padding: 35px 76px 71px 76px;
     gap: 36px;
 }
 
@@ -33,6 +42,8 @@
     height: 75px;
     border-radius: 10px;
     padding-left: 30px;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .billing-left form select {
@@ -59,4 +70,75 @@
     resize: none;
     text-align: left;
     padding-top: 25px;
+}
+
+.billing-right {
+    display: flex;
+    flex-direction: column;
+    padding: 87px 35px;
+}
+
+.billing-top-payment {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: 33px;
+    justify-content: space-between;
+}
+
+.billing-top-payment h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.payment-left,
+.payment-right {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.payment-left {
+    text-align: left;
+}
+
+.payment-left .item {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.payment-left .item .grey {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.payment-right {
+    text-align: right;
+}
+
+.payment-right h4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #B88E2F;
+}
+
+.payment-methods {
+    padding-top: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.payment-list {
+    list-style: none;
+}
+
+.payment-list li p {
+    padding: 20px 0;
 }
