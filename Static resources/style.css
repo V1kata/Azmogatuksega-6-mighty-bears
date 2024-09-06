@@ -11,11 +11,11 @@
 @import url('./styles/comparisonProductDetails.css');
 @import url('./styles/compareData.css');
 @import url('./styles/SingleProductMain.css');
-@import url('./styles/SingleProductPath.css');
 @import url('./styles/Product-purchase.css');
 @import url('./styles/test.css');
 @import url('./styles/cart.css');
 @import url('./styles/billing.css');
+@import url('./styles/carousel.css');
 
 * {
     margin: 0;
