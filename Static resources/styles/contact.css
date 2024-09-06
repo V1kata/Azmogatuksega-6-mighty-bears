@@ -1,0 +1,65 @@
+.contacts {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 191px;
+    gap: 30px;
+}
+
+.contacts-plain-text {
+    margin: 98px auto;
+    text-align: center;
+    width: 644px;
+}
+
+.contacts-plain-text h2 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 54px;
+}
+
+.contacts-plain-text .grey {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.contacts .contacts-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+}
+
+.contacts-card {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.contacts-items {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contacts-items h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.contacts-items p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.contacts-right form button {
+    all: unset;
+    padding: 13px 88px;
+    background: #B88E2F;
+    color: white;
+    cursor: pointer;
+    align-self: flex-start;
+}
