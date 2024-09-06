@@ -1,0 +1,62 @@
+.billing-left {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 36px;
+}
+
+.billing-left form {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.billing-left form .names {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.billing-left form label {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.billing-left form input,
+.billing-left form select,
+.billing-left form textarea {
+    background: white;
+    border: 1px solid #9F9F9F;
+    width: 453px;
+    height: 75px;
+    border-radius: 10px;
+    padding-left: 30px;
+}
+
+.billing-left form select {
+    appearance: none;
+    background-image: url('../assets/billingArrow.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 30px) center;
+    background-size: 14px 8px;
+    padding-left: 30px;
+    color: #9F9F9F;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.billing-left form .names input {
+    width: 211px;
+}
+
+.billing-left form div label {
+    padding-bottom: 22px;
+}
+
+.billing-left form textarea {
+    resize: none;
+    text-align: left;
+    padding-top: 25px;
+}
