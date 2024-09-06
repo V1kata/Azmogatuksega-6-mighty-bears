@@ -84,17 +84,9 @@ footer input::placeholder {
     font-size: 14px;
 }
 
-footer input,
-footer button {
+footer input {
     all: unset;
     border-bottom: 1px solid black;
-}
-
-footer button {
-    color: black;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
 }
 
 footer .footer-end {

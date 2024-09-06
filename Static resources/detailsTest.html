@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Asgaard Sofa Product Page</title>
+    <style>
+        .product-container {
+            display: flex;
+            max-width: 1200px;
+            margin: 40px auto;
+            gap: 50px;
+        }
+
+        /* Left Column Styles */
+        .product-left {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .thumbnails {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .thumbnail-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .main-image {
+            padding: 10px;
+            background-color: #F9F1E7;
+            border-radius: 10px;
+        }
+
+        .product-main-image {
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        /* Right Column Styles */
+        .product-right {
+            flex: 1;
+        }
+
+        .product-title {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 1.75rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .product-rating {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        .product-description {
+            font-size: 1rem;
+            margin-bottom: 30px;
+            color: #666;
+        }
+
+        .product-options {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .product-sizes,
+        .product-colors {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .size-btn {
+            border: 1px solid #ccc;
+            background-color: transparent;
+            padding: 10px 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .color-circle {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+
+        .product-quantity {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .quantity-btn {
+            background-color: transparent;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .quantity-input {
+            width: 50px;
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .add-to-cart,
+        .compare-btn {
+            padding: 15px 30px;
+            border: 2px solid #333;
+            background-color: white;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .add-to-cart {
+            background-color: #FFD700;
+        }
+
+        .compare-btn {
+            background-color: white;
+        }
+
+        .product-info {
+            margin-top: 30px;
+            color: #666;
+        }
+
+        .product-info p {
+            margin: 5px 0;
+        }
+
+        .share-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="product-container">
+            <!-- Left Column: Thumbnails and Main Image -->
+            <div class="product-left">
+                <div class="thumbnails">
+                    <img src="assets/thumb1.png" alt="thumb1" class="thumbnail-img">
+                    <img src="assets/thumb2.png" alt="thumb2" class="thumbnail-img">
+                    <img src="assets/thumb3.png" alt="thumb3" class="thumbnail-img">
+                    <img src="assets/thumb4.png" alt="thumb4" class="thumbnail-img">
+                </div>
+                <div class="main-image">
+                    <img src="assets/sofa.png" alt="Asgaard Sofa" class="product-main-image">
+                </div>
+            </div>
+
+            <!-- Right Column: Product Details -->
+            <div class="product-right">
+                <h1 class="product-title">Asgaard Sofa</h1>
+                <p class="product-price">Rs. 250,000.00</p>
+                <div class="product-rating">
+                    <span>★★★★☆</span>
+                    <span>5 Customer Reviews</span>
+                </div>
+                <p class="product-description">
+                    Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted
+                    hero with well-balanced audio that boasts clear midrange and extended highs for a superior sound.
+                </p>
+
+                <!-- Size Selection -->
+                <div class="product-options">
+                    <div class="product-sizes">
+                        <p>Size</p>
+                        <button class="size-btn">L</button>
+                        <button class="size-btn">XL</button>
+                        <button class="size-btn">XS</button>
+                    </div>
+
+                    <!-- Color Selection -->
+                    <div class="product-colors">
+                        <p>Color</p>
+                        <div class="color-circle" style="background-color: #6462F0;"></div>
+                        <div class="color-circle" style="background-color: #FFD700;"></div>
+                        <div class="color-circle" style="background-color: #000;"></div>
+                    </div>
+                </div>
+
+                <!-- Quantity Selection -->
+                <div class="product-quantity">
+                    <button class="quantity-btn">-</button>
+                    <input type="number" value="1" class="quantity-input">
+                    <button class="quantity-btn">+</button>
+                </div>
+
+                <!-- Add to Cart and Compare Buttons -->
+                <div class="action-buttons">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <button class="compare-btn">+ Compare</button>
+                </div>
+
+                <!-- Additional Information -->
+                <div class="product-info">
+                    <p><strong>SKU:</strong> SS001</p>
+                    <p><strong>Category:</strong> Sofas</p>
+                    <p><strong>Tags:</strong> Sofa, Chair, Home, Shop</p>
+                    <div class="share-icons">
+                        <a href="#"><img src="assets/facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="assets/linkedin.png" alt="LinkedIn"></a>
+                        <a href="#"><img src="assets/twitter.png" alt="Twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
