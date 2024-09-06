@@ -1,0 +1,78 @@
+.filter-sec {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #F9F1E7;
+    padding: 35px 100px;
+}
+
+.filter-sec .left-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+}
+
+.filter-sec .left-menu ul li a img {
+    display: block;
+}
+
+.filter-sec .left-menu ul li:first-child a {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.filter-sec .left-menu ul .border {
+    padding-right: 25px;
+    border-right: 2px solid #9F9F9F;
+}
+
+.filter-sec .right-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.row input {
+    all: unset;
+    background: white;
+}
+
+.row input::placeholder {
+    font-size: 20px;
+}
+
+.row p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+}
+
+.left.row input {
+    width: 55px;
+    height: 55px;
+}
+
+.right.row input {
+    width: 188px;
+    height: 55px;
+}

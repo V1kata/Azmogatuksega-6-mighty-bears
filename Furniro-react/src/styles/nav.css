@@ -1,0 +1,51 @@
+header {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 29px 0 30px 0;
+}
+
+header .nav-image {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+header .nav-image img {
+    width: 50px;
+    height: 32px;
+}
+
+header nav ul,
+header .nav-icons ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul {
+    gap: 75px;
+}
+
+header .nav-icons ul {
+    gap: 45px;
+}
+
+header .nav-icons ul li a {
+    width: 28px;
+    height: 28px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}

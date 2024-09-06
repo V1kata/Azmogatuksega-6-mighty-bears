@@ -1,0 +1,32 @@
+.catalog-given {
+    flex-direction: row;
+    gap: 55px;
+    background: #FAF3EA;
+    padding: 100px 53px;
+}
+
+.catalog-card {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.right-details {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
+}
+
+.black {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 37.5px;
+}
+
+.grey {
+    color: #898989;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
