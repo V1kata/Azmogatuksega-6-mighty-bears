@@ -96,6 +96,7 @@
     all: unset;
     border: 1px solid #B88E2F;
     padding: 12px 78px;
+    cursor: pointer;
 }
 
 .hover-hidden {
