@@ -1,3 +1,4 @@
+import { Given } from "../all/Given";
 import { CartCheckout } from "./CartCheckout";
 import { CartTable } from "./CartTable";
 
@@ -9,6 +10,8 @@ export function Cart() {
 
                 <CartCheckout />
             </section>
+
+            <Given />
         </>
     )
 }

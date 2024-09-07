@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom"
+
 export function CartCheckout() {
+    const navigate = useNavigate();
+
     return (
         <div class="cart-right">
             <h3>Cart Totals</h3>
@@ -10,7 +14,7 @@ export function CartCheckout() {
                 <p>Total</p>
                 <p class="golden">Rs. 250,000.00</p>
             </div>
-            <button>Check out</button>
+            <button onClick={() => navigate('/checkout')}>Check out</button>
         </div>
     )
 }
