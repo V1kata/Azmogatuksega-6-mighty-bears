@@ -5,45 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furniro Blog</title>
-    <link rel="stylesheet" href="./styles/mystyles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/Meubel House_Logos-05 (1).svg">
 </head>
 
 <body>
     <header>
+        <img src="assets/logoIcon.svg" alt="furniroIcon">
         <nav>
-            <div class="logo">Furniro</div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
         </nav>
-
-        <div class="hero-image">
-            <img class="banner" src="Rectangle 1.png" alt="Hero Image">
+        <div class="nav-icons">
+            <ul>
+                <li><a href=""><img src="assets/profile.svg" alt=""></a></li>
+                <li><a href=""><img src="assets/loop.svg" alt=""></a></li>
+                <li><a href=""><img src="assets/heart.svg" alt=""></a></li>
+                <li><a href=""><img src="assets/cart.svg" alt=""></a></li>
+            </ul>
+        </div>
     </header>
-
-    <section class="blog-header">
-        <div class="container">
-            <img style="width: 77px;" src="Meubel House_Logos-05@2x.png">
-            <h2>Blog</h2>
-            <p>Home > Blog</p>
+    <section class="reusable-main-section">
+        <img src="assets/catalogSvg.svg" alt="">
+        <div class="catalog-sec-text">
+            <h1>Blog</h1>
+            <div class="mini-text">
+                <p>Home</p>
+                <img src="assets/catalogArrow.svg" alt="">
+                <p>Blog</p>
+            </div>
         </div>
     </section>
 
     <section class="blog-content">
-        <div class="container">
+        <div class="container-blog">
             <div class="blog-posts">
                 <article class="post">
-                    <img src="Rectangle 68@2x.png" alt="Millennial Design">
+                    <img src="assets/Rectangle 68.svg" alt="Millennial Design">
                     <div class="post-info">
                         <div class="icon-row">
-                            <img class="icon" src="Vector.png" alt="Admin Icon">
+                            <img class="icon" src="assets/Vector (2).svg" alt="Admin Icon">
                             <span style="font-size: 0.8em;">Admin</span>
-                            <img class="icon" src="Vector(1).png" alt="Calendar Icon">
+                            <img class="icon" src="assets/Vector (3).svg" alt="Calendar Icon">
                             <span style="font-size: 0.8em;">14 Oct 2022</span>
-                            <img class="icon" src="Vector(2).png" alt="Tag Icon">
+                            <img class="icon" src="assets/Vector (4).svg"Tag Icon">
                             <span style="font-size: 0.8em;">Wood</span>
                         </div>
                         <h3>Going all-in with millennial design</h3>
@@ -59,14 +68,14 @@
                 </article>
 
                 <article class="post">
-                    <img src="Rectangle 68.png" alt="New Ways of Decorating">
+                    <img src="assets/Rectangle 68 (1).svg" alt="New Ways of Decorating">
                     <div class="post-info">
                         <div class="icon-row">
-                            <img class="icon" src="Vector.png" alt="Admin Icon">
+                            <img class="icon" src="assets/Vector (2).svg" alt="Admin Icon">
                             <span style="font-size: 0.8em;">Admin</span>
-                            <img class="icon" src="Vector(1).png" alt="Calendar Icon">
+                            <img class="icon" src="assets/Vector (3).svg" alt="Calendar Icon">
                             <span style="font-size: 0.8em;">14 Oct 2022</span>
-                            <img class="icon" src="Vector(2).png" alt="Tag Icon">
+                            <img class="icon" src="assets/Vector (4).svg" alt="Tag Icon">
                             <span style="font-size: 0.8em;">Handmade</span>
                         </div>
                         <h3>Exploring new ways of decorating</h3>
@@ -79,14 +88,14 @@
                             dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.</p>
                         <a class="read" href="#">Read more</a>
                     </div>
-                    <img src="Rectangle 68(1).png" alt="New Ways of Decorating">
+                    <img src="assets/Rectangle 68 (2).svg" alt="New Ways of Decorating">
                     <div class="post-info">
                         <div class="icon-row">
-                            <img class="icon" src="Vector.png" alt="Admin Icon">
+                            <img class="icon" src="assets/Vector (2).svg" alt="Admin Icon">
                             <span style="font-size: 0.8em;">Admin</span>
-                            <img class="icon" src="Vector(1).png" alt="Calendar Icon">
+                            <img class="icon" src="assets/Vector (3).svg" alt="Calendar Icon">
                             <span style="font-size: 0.8em;">14 Oct 2022</span>
-                            <img class="icon" src="Vector(2).png" alt="Tag Icon">
+                            <img class="icon" src="assets/Vector (4).svg" alt="Tag Icon">
                             <span style="font-size: 0.8em;">Wood</span>
                         </div>
                         <h3>Exploring new ways of decorating</h3>
@@ -97,7 +106,9 @@
                             tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at
                             erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper
                             dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.</p>
-                        <a class="read" href="#">Read more</a>
+                            <section class="read-btn">
+                                <a class="read" href="#">Read more</a>
+                            </section>
                     </div>
                 </article>
             </div>
@@ -106,7 +117,7 @@
                 <div class="s01">
                     <div class="s02">
                         <input type="text" placeholder="">
-                        <img style="position: absolute; transform: translateX(270px)" src="Vector(4).png">
+                        <img style="position: absolute; transform: translateX(270px); cursor: pointer;" src="assets/akar-icons_search.svg">
 
                     </div>
 
@@ -124,35 +135,35 @@
                     <div class="s07">
                         <h3 class="s04">Recent Posts</h3>
                         <div class="s08">
-                            <img src="Rectangle 69(3).png" alt="Post 1" class="s09">
+                            <img src="assets/Rectangle 69.svg" alt="Post 1" class="s09">
                             <div class="s10">
                                 <h4 class="s11">Going all-in with millennial design</h4>
                                 <span class="s12">03 Aug 2022</span>
                             </div>
                         </div>
                         <div class="s08">
-                            <img src="Rectangle 69.png" alt="Post 2" class="s09">
+                            <img src="assets/Rectangle 69 (1).svg" alt="Post 2" class="s09">
                             <div class="s10">
                                 <h4 class="s11">Exploring new ways of decorating</h4>
                                 <span class="s12">03 Aug 2022</span>
                             </div>
                         </div>
                         <div class="s08">
-                            <img src="Rectangle 69(1).png" alt="Post 3" class="s09">
+                            <img src="assets/Rectangle 69 (2).svg" alt="Post 3" class="s09">
                             <div class="s10">
                                 <h4 class="s11">Handmade pieces that took time to make</h4>
                                 <span class="s12">03 Aug 2022</span>
                             </div>
                         </div>
                         <div class="s08">
-                            <img src="Rectangle 69(4).png" alt="Post 4" class="s09">
+                            <img src="assets/Rectangle 69 (3).svg" alt="Post 4" class="s09">
                             <div class="s10">
                                 <h4 class="s11">Modern home in Milan</h4>
                                 <span class="s12">03 Aug 2022</span>
                             </div>
                         </div>
                         <div class="s08">
-                            <img src="Rectangle 69(2).png" alt="Post 5" class="s09">
+                            <img src="assets/Rectangle 69 (4).svg" alt="Post 5" class="s09">
                             <div class="s10">
                                 <h4 class="s11">Colorful office redesign</h4>
                                 <span class="s12">03 Aug 2022</span>
