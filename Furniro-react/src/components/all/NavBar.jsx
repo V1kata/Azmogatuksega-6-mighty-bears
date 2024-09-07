@@ -14,7 +14,7 @@ export function NavBar() {
                 </nav>
                 <div className="nav-icons">
                     <ul>
-                        <li><Link to="/blog"><img src="/profile.svg" alt="" /></Link></li>
+                        <li><Link to="/contacts"><img src="/profile.svg" alt="" /></Link></li>
                         <li><Link to="/"><img src="/loop.svg" alt="" /></Link></li>
                         <li><Link to="/"><img src="/heart.svg" alt="" /></Link></li>
                         <li><Link to="/cart"><img src="/cart.svg" alt="" /></Link></li>
