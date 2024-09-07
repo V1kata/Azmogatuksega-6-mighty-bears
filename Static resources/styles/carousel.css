@@ -1,0 +1,32 @@
+
+.carousel-control-next,
+.carousel-control-prev {
+  filter: brightness(0.6); /* Darken the entire button area */
+}
+.carousel-control-prev{
+  padding-right: 160px;
+}
+.carousel-control-next{
+  padding-left: 160px;
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+  filter: brightness(0.8); /* Make buttons slightly lighter on hover */
+}
+.firstSlideHeading{
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+  padding-bottom: 30px;  
+}
+.firstSlideDescription{
+  font-family: Poppins;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+
+}

@@ -15,7 +15,9 @@
 @import url('./styles/test.css');
 @import url('./styles/cart.css');
 @import url('./styles/billing.css');
+@import url('./styles/carousel.css');
 @import url('./styles/contact.css');
+
 
 * {
     margin: 0;
