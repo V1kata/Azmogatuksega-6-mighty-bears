@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { ProductCard } from "./ProductCard";
 
-export function ProductList({ itemsPerPage, setItemsPerPage }) {
+export function ProductList({ itemsPerPage, from }) {
     const [items, setItems] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
 
@@ -10,6 +10,10 @@ export function ProductList({ itemsPerPage, setItemsPerPage }) {
             .then((res) => res.json())
             .then((data) => setItems(data.items));
     }, []);
+
+    useEffect(() => {
+        setCurrentPage(1);
+    }, [itemsPerPage]);
 
     const getVisibleItems = () => {
         const startIndex = (currentPage - 1) * itemsPerPage;
@@ -30,7 +34,7 @@ export function ProductList({ itemsPerPage, setItemsPerPage }) {
                     <ProductCard item={item} key={item._id} />
                 ))}
             </div>
-            <div className="page-numbers">
+            {from == 'home' ? <></> : <div className="page-numbers">
                 {Array.from({ length: totalPages }, (_, i) => (
                     <button
                         key={i + 1}
@@ -41,6 +45,7 @@ export function ProductList({ itemsPerPage, setItemsPerPage }) {
                     </button>
                 ))}
             </div>
+            }
         </>
     );
 }

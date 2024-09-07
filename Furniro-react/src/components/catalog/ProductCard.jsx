@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom";
 import { CircleStyle } from "./CirleStyle";
 
 export function ProductCard({ item }) {
-    console.log(item)
+    const navigate = useNavigate();
     const [style, setStyle] = useState({ style: '', text: '' });
 
     useEffect(() => {
@@ -15,12 +15,12 @@ export function ProductCard({ item }) {
         <div className="product-card">
             <div className="overlay">
                 <div className="imgDiv">
-                    <img src={`data:image/jpeg;base64,${item['images'][0].content}`} alt="" />
+                    <img src={`data:image/jpeg;base64,${item?.images[0]?.content}`} alt="" />
                     {item.procent == 0 || item.markAsNew ? <CircleStyle style={style.style} text={style.text} /> : <></>}
                 </div>
                 <div className="hover-hidden">
                     <div className="hover-container">
-                        <button className="add-product">Add to cart</button>
+                        <button className="add-product" onClick={() => navigate(`/details/${item._id}`)}>Learn more</button>
                         <ul className="hover-icons">
                             <li><Link to=""><img src="/gridicons_share.svg" alt="" />Share</Link></li>
                             <li><Link to=""><img src="/compare.svg" alt="" />Compare</Link></li>

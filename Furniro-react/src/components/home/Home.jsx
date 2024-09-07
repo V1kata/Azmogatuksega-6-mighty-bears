@@ -1,4 +1,13 @@
+import { useState } from "react";
+import { ProductList } from "../catalog/ProductList";
+
 export function Home() {
+    const [page, setPage] = useState(4);  // How many items to show
+
+    const handleShowMore = () => {
+        setPage((prevPage) => prevPage + 4);
+    };
+
     return (
         <>
             <section className="home-main-section">
@@ -37,82 +46,9 @@ export function Home() {
 
             <section className="home-products">
                 <h2>Our products</h2>
-                <div className="product-cards">
-                    <div className="product-card">
-                        <div className="imgDiv">
-                            <img src="assets/sylthrie.svg" alt="" />
-                            <div className="circle procent">
-                            <p style={{color: 'white'}}>-30%</p>
-                            </div>
-                        </div>
-                        <div className="product-text">
-                            <div className="product-padding-text">
-                                <h3>Syltherine</h3>
-                                <p className="shortDesc">Stylish cafe chair</p>
-                                <div className="price">
-                                    <p className="discountedPrice">Rp 2.500.000</p>
-                                    <p className="mainPrice">Rp 3.500.000</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="product-card">
-                        <div className="imgDiv">
-                            <img src="assets/sylthrie.svg" alt="" />
-                            <div className="circle procent">
-                                <p style={{ color: 'white' }}>-30%</p>
-                            </div>
-                        </div>
-                        <div className="product-text">
-                            <div className="product-padding-text">
-                                <h3>Syltherine</h3>
-                                <p className="shortDesc">Stylish cafe chair</p>
-                                <div className="price">
-                                    <p className="discountedPrice">Rp 2.500.000</p>
-                                    <p className="mainPrice">Rp 3.500.000</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="product-card">
-                        <div className="imgDiv">
-                            <img src="assets/sylthrie.svg" alt="" />
-                            <div className="circle procent">
-                                <p style={{ color: 'white' }}>-30%</p>
-                            </div>
-                        </div>
-                        <div className="product-text">
-                            <div className="product-padding-text">
-                                <h3>Syltherine</h3>
-                                <p className="shortDesc">Stylish cafe chair</p>
-                                <div className="price">
-                                    <p className="discountedPrice">Rp 2.500.000</p>
-                                    <p className="mainPrice">Rp 3.500.000</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="product-card">
-                        <div className="imgDiv">
-                            <img src="assets/sylthrie.svg" alt="" />
-                            <div className="circle procent">
-                                <p style={{ color: 'white' }}>-30%</p>
-                            </div>
-                        </div>
-                        <div className="product-text">
-                            <div className="product-padding-text">
-                                <h3>Syltherine</h3>
-                                <p className="shortDesc">Stylish cafe chair</p>
-                                <div className="price">
-                                    <p className="discountedPrice">Rp 2.500.000</p>
-                                    <p className="mainPrice">Rp 3.500.000</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button className="product-more">Show more</button>
+                <ProductList itemsPerPage={page} from={'home'} />
+                <button className="product-more" onClick={handleShowMore}>Show more</button>
             </section>
         </>
-    )
+    );
 }

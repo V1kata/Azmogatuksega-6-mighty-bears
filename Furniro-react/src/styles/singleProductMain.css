@@ -13,15 +13,16 @@
   gap: 14px;
   position: absolute;
   left: 99px;
-font-family: Poppins;
-font-size: 16px;
-font-weight: 400;
-
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
 }
-.path-links{
+
+.path-links {
   color: #9F9F9F;
 }
-.Product-name{
+
+.Product-name {
   border-style: solid;
   border-width: 2px;
   border-color: #9F9F9F;
